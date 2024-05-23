@@ -1,0 +1,105 @@
+:root{
+    --main--color: #FF9800;
+}
+.body{
+    font-family:'Open Sans', sans-serif ;
+}
+/* Start Landing */
+.settings{
+    position: fixed;
+    left: -200px;
+    top: 0;
+    background-color: #ffffffb0;
+    width: 200px;
+    z-index: 1000;
+    min-height: 100vh;
+    transition: .3s;
+}
+.settings .toggle-settings i{
+    width: 30px;
+    padding: 8px 0;
+}
+.settings.open{
+    left:0;
+}
+.settings .toggle-settings{
+    position: absolute;
+    right: -30px;
+    top: 100px;
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+    font-size: 23px;
+}
+/* End Landing */
+/* Start Landing */
+.landing-page{
+    min-height: 100vh;
+    background-image: url(/img/1.jpg);
+    background-size: cover;
+    position: relative;
+}
+.landing-page .overlay{
+    background-color: #0000007a;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.header-area{
+    position: relative;
+    z-index: 2;
+    color: white;
+    display: flex;
+    padding: 10px;
+}
+.header-area .logo{
+    width: 300px;
+    padding: 15px;
+    font-size: 24px;
+}
+.header-area ul{
+    list-style: none;
+    text-align: right;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 20px
+}
+.header-area ul li{
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 20px;
+}
+.header-area ul a{
+    color: white;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.header-area ul a:hover,
+.header-area ul .active{
+        color: #FF9800;
+}
+.introduction{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+.introduction h1{
+    font-size: 40px ;
+}
+.introduction h1 span{
+    color: var(--main--color);
+}
+.introduction p{
+    line-height: 1.7;
+    font-size: 18px;
+}
+/* End Landing */
